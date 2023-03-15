@@ -20,7 +20,7 @@ body {
 #gameBoard {
     display: grid;
     grid-template : repeat(5 , 1fr) / repeat(4 , 1fr);
-    gap: 0.625rem;
+    gap: 10px;
 
 }
 
@@ -130,3 +130,17 @@ body {
 }
 
 /* moves */
+
+
+@media (max-width: 600px)
+{
+
+  #gameBoard {
+    gap: 5px;
+  }  
+
+  .card {
+    width: 95px;
+    height: 120px;
+  }
+}
